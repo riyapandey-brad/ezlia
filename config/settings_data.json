@@ -17,7 +17,7 @@
             "type": "announcement",
             "settings": {
               "text": "FREE SHIPPING ON ORDERS ABOVE 1599",
-              "color_scheme": "accent-1",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
