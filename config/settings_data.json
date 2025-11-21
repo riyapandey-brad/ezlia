@@ -20,19 +20,10 @@
               "color_scheme": "accent-1",
               "link": ""
             }
-          },
-          "announcement_giKaik": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "announcement_giKaik"
+          "announcement-bar-0"
         ],
         "settings": {}
       },
