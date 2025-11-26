@@ -9,6 +9,74 @@
  */
 {
   "sections": {
+    "category_bar_hbePT7": {
+      "type": "category-bar",
+      "blocks": {
+        "link_rkERmw": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        },
+        "link_kGnTU7": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        },
+        "link_CyMwLy": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        },
+        "link_nEPBei": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        },
+        "link_AM4ipb": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        },
+        "link_A8hafq": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        },
+        "link_HXEwdz": {
+          "type": "link",
+          "settings": {
+            "label": "PICK A MOOD",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_rkERmw",
+        "link_kGnTU7",
+        "link_CyMwLy",
+        "link_nEPBei",
+        "link_AM4ipb",
+        "link_A8hafq",
+        "link_HXEwdz"
+      ],
+      "name": "Category bar",
+      "settings": {
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -19,8 +87,459 @@
         "adapt_height_first_image": false
       }
     },
+    "shop_by_category_cU9iK3": {
+      "type": "shop-by-category",
+      "blocks": {
+        "collection_card_pgR4gq": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "dresses",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_b6hm3Y": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "skirts",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_ei3rgJ": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "shirts",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_YUpgBK": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "tops",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_JaVxeB": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "hoodie-sets",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_nrV97n": {
+          "type": "collection_card",
+          "disabled": true,
+          "settings": {
+            "collection": "coord-sets",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_AfeVem": {
+          "type": "collection_card",
+          "disabled": true,
+          "settings": {
+            "collection": "winter-sets",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_6AjCfb": {
+          "type": "collection_card",
+          "disabled": true,
+          "settings": {
+            "collection": "trousers",
+            "custom_title": "",
+            "make_large": false
+          }
+        },
+        "collection_card_M3Umpk": {
+          "type": "collection_card",
+          "disabled": true,
+          "settings": {
+            "collection": "combo-sets",
+            "custom_title": "",
+            "make_large": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_pgR4gq",
+        "collection_card_b6hm3Y",
+        "collection_card_ei3rgJ",
+        "collection_card_YUpgBK",
+        "collection_card_JaVxeB",
+        "collection_card_nrV97n",
+        "collection_card_AfeVem",
+        "collection_card_6AjCfb",
+        "collection_card_M3Umpk"
+      ],
+      "name": "Shop by category grid",
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "subtitle": "STEP IT RIGHT",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "shop_by_category_row_JHMtkC": {
+      "type": "shop-by-category-row",
+      "blocks": {
+        "collection_card_MenKMm": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "coord-sets",
+            "custom_title": ""
+          }
+        },
+        "collection_card_JcxRNC": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "winter-sets",
+            "custom_title": ""
+          }
+        },
+        "collection_card_yUbX9j": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "trousers",
+            "custom_title": ""
+          }
+        },
+        "collection_card_LQPyQq": {
+          "type": "collection_card",
+          "settings": {
+            "collection": "combo-sets",
+            "custom_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_MenKMm",
+        "collection_card_JcxRNC",
+        "collection_card_yUbX9j",
+        "collection_card_LQPyQq"
+      ],
+      "name": "Shop by category row (4 cols)",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "new_arrivals_tabs_GXU9xE": {
+      "type": "new-arrivals-tabs",
+      "blocks": {
+        "collection_tab_hRePzg": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "dresses",
+            "tab_label": "DRESSES",
+            "products_to_show": 8
+          }
+        },
+        "collection_tab_BQ3aMR": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "tops",
+            "tab_label": "TOPS",
+            "products_to_show": 8
+          }
+        },
+        "collection_tab_96rzw6": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "shirts",
+            "tab_label": "SHIRTS",
+            "products_to_show": 8
+          }
+        },
+        "collection_tab_kbN8D9": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "coord-sets",
+            "tab_label": "COORD-SETS",
+            "products_to_show": 8
+          }
+        }
+      },
+      "block_order": [
+        "collection_tab_hRePzg",
+        "collection_tab_BQ3aMR",
+        "collection_tab_96rzw6",
+        "collection_tab_kbN8D9"
+      ],
+      "name": "New arrivals tabs",
+      "settings": {
+        "heading": "NEW ARRIVALS",
+        "view_all_label": "VIEW ALL",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "video_product_slider_6WKwXU": {
+      "type": "video-product-slider",
+      "blocks": {
+        "video_product_yRJxVw": {
+          "type": "video_product",
+          "settings": {
+            "video": "shopify://files/videos/95e74764eba988cf14640448718d5dfc_9af6c56f-5d40-40ad-b13b-33f30d23c7cd.mp4",
+            "product": ""
+          }
+        },
+        "video_product_tnh8fi": {
+          "type": "video_product",
+          "settings": {
+            "video": "shopify://files/videos/38958a4d12cb5e20c834cf6e285e1e77_720w.mp4",
+            "product": ""
+          }
+        },
+        "video_product_dzARtY": {
+          "type": "video_product",
+          "settings": {
+            "video": "shopify://files/videos/38958a4d12cb5e20c834cf6e285e1e77_720w (1).mp4",
+            "product": ""
+          }
+        },
+        "video_product_fR7LG8": {
+          "type": "video_product",
+          "settings": {
+            "video": "shopify://files/videos/95e74764eba988cf14640448718d5dfc.mp4",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_product_yRJxVw",
+        "video_product_tnh8fi",
+        "video_product_dzARtY",
+        "video_product_fR7LG8"
+      ],
+      "disabled": true,
+      "name": "Video Product Slider",
+      "settings": {}
+    },
+    "explore_trends_slider_FiFeUG": {
+      "type": "Explore-trends-slider",
+      "blocks": {
+        "trend_card_CrFBGB": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/759429aaa6f7bc347a1617372b011ca9b5243722_2.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        },
+        "trend_card_PCQxAX": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/759429aaa6f7bc347a1617372b011ca9b5243722_2.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        },
+        "trend_card_bb8RLe": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/759429aaa6f7bc347a1617372b011ca9b5243722_2.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        },
+        "trend_card_LRtwHe": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/759429aaa6f7bc347a1617372b011ca9b5243722_2.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "trend_card_CrFBGB",
+        "trend_card_PCQxAX",
+        "trend_card_bb8RLe",
+        "trend_card_LRtwHe"
+      ],
+      "name": "Explore trends slider",
+      "settings": {
+        "heading": "EXPLORE THE TRENDS",
+        "subheading": "STEP IT RIGHT",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collection_look_grid_6WAciH": {
+      "type": "Collection-look-grid",
+      "blocks": {
+        "collection_block_RWtBak": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "dresses",
+            "img1": "shopify://shop_images/2a1cbd30bc6fc5aec1dca26a86ad460a3fa7519f.png",
+            "img2": "shopify://shop_images/43306cd945b8d1e929149de4d60e57f288e965c6_5f246628-91d9-41a6-8e22-3ea8cbdc6626.png",
+            "img3": "shopify://shop_images/1aac9402048a27f0f9b16be02836f483f12b114c.png",
+            "img4": "shopify://shop_images/d6811840f9c8474cbe54df49b78dc0cfac8c2dea_f7d0f61c-287a-457d-ae47-c7819f0277b0.png",
+            "title": "BLUE HIGHLIGHTS",
+            "btn_text": "SHOP NOW >>"
+          }
+        },
+        "collection_block_UfMqDm": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "dresses",
+            "img1": "shopify://shop_images/ab7e13f9d14d697f0afe920c4664b5b1555a545f_834a70c6-dbb4-4c07-bf48-42df086503d7.png",
+            "img2": "shopify://shop_images/c15dab63a0123f6ddee4de7feea1a1c1e33223e1_f8d82d76-3d1a-4f01-ab34-12c514f42afe.png",
+            "img3": "shopify://shop_images/e7362af358006f14aa961a148c169371c6e73f7e_61b56c50-14b2-4bc6-8732-2153d933803b.png",
+            "img4": "shopify://shop_images/ab7e13f9d14d697f0afe920c4664b5b1555a545f_834a70c6-dbb4-4c07-bf48-42df086503d7.png",
+            "title": "BLACK HIGHLIGHTS",
+            "btn_text": "SHOP NOW >>"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_RWtBak",
+        "collection_block_UfMqDm"
+      ],
+      "name": "Collection look grid",
+      "settings": {
+        "section_height": 40
+      }
+    },
+    "explore_trends_slider_YKyMTN": {
+      "type": "Explore-trends-slider",
+      "blocks": {
+        "trend_card_8rVtyF": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/5fe0155f6c7a7b74e40dc3785bf6f52337e97467.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        },
+        "trend_card_wCCyaz": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/d22709aad6b7d4fdeb58b6ec06c0c0d768629184.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        },
+        "trend_card_8XBJfL": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/5fe0155f6c7a7b74e40dc3785bf6f52337e97467.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "coord-sets",
+            "custom_link": ""
+          }
+        },
+        "trend_card_fF3BH3": {
+          "type": "trend_card",
+          "settings": {
+            "image": "shopify://shop_images/d22709aad6b7d4fdeb58b6ec06c0c0d768629184.png",
+            "title": "TRAVEL DIARIES",
+            "subtitle": "",
+            "collection": "dresses",
+            "custom_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "trend_card_8rVtyF",
+        "trend_card_wCCyaz",
+        "trend_card_8XBJfL",
+        "trend_card_fF3BH3"
+      ],
+      "name": "Explore trends slider",
+      "settings": {
+        "heading": "EXPLORE THE TRENDS",
+        "subheading": "STEP IT RIGHT",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "new_arrivals_tabs_K6tPB4": {
+      "type": "new-arrivals-tabs",
+      "blocks": {
+        "collection_tab_YgpPDA": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "dresses",
+            "tab_label": "DRESSES",
+            "products_to_show": 6
+          }
+        },
+        "collection_tab_HYhhEi": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "dresses",
+            "tab_label": "TOPS",
+            "products_to_show": 6
+          }
+        },
+        "collection_tab_6xHfaj": {
+          "type": "collection_tab",
+          "settings": {
+            "collection": "dresses",
+            "tab_label": "SHIRTS",
+            "products_to_show": 8
+          }
+        },
+        "collection_tab_XPqVHc": {
+          "type": "collection_tab",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "tab_label": "",
+            "products_to_show": 8
+          }
+        }
+      },
+      "block_order": [
+        "collection_tab_YgpPDA",
+        "collection_tab_HYhhEi",
+        "collection_tab_6xHfaj",
+        "collection_tab_XPqVHc"
+      ],
+      "name": "New arrivals tabs",
+      "settings": {
+        "heading": "NEW ARRIVALS",
+        "view_all_label": "VIEW ALL",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "about_98xFCH": {
+      "type": "about",
+      "name": "About hero",
+      "settings": {
+        "heading": "ABOUT US",
+        "text": "<p>Since 1866, we have been creating masterfully crafted footwear. Our British heritage brand offers a bespoke atelier in Paris, a personalized By Request service, and a distinguished men’s ready-to-wear collection, all crafted in our Northampton workshop, England.</p>",
+        "image": "shopify://shop_images/d0afa7b52153be0238b26008b2b6b0686e779763.png",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "collection": "",
@@ -35,7 +554,17 @@
     }
   },
   "order": [
+    "category_bar_hbePT7",
     "image_banner",
+    "shop_by_category_cU9iK3",
+    "shop_by_category_row_JHMtkC",
+    "new_arrivals_tabs_GXU9xE",
+    "video_product_slider_6WKwXU",
+    "explore_trends_slider_FiFeUG",
+    "collection_look_grid_6WAciH",
+    "explore_trends_slider_YKyMTN",
+    "new_arrivals_tabs_K6tPB4",
+    "about_98xFCH",
     "featured_products"
   ]
 }

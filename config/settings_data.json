@@ -41,25 +41,34 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "text_bQiajP": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "heading": "",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.</p>"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Help",
               "menu": "footer"
             }
           }
         },
         "block_order": [
+          "text_bQiajP",
           "footer-0"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Sign up to our emails",
+          "newsletter_enable": false,
+          "newsletter_heading": "",
           "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false
         }
       }
     },

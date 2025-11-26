@@ -1,0 +1,7 @@
+header.header .header--top-center{
+    max-height: 82px;
+}
+
+.spaced-section{
+    margin-top: unset !important;
+}
