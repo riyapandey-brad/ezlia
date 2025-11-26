@@ -1,0 +1,323 @@
+<section
+  id="section-{{ section.id }}"
+  class="vp-section vp-section-{{ section.id }}"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="vp-inner">
+    {% if section.settings.heading != blank %}
+      <div class="vp-header">
+        <h2 class="vp-heading">{{ section.settings.heading }}</h2>
+      </div>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div class="vp-slider-wrap">
+        <button type="button" class="vp-arrow vp-arrow--prev" data-vp-prev>‹</button>
+
+        <div class="vp-slider" data-vp-slider>
+          {% for block in section.blocks %}
+            {% assign product = block.settings.product %}
+            <article class="vp-slide" {{ block.shopify_attributes }}>
+              {% if product %}
+                <a href="{{ product.url }}" class="vp-card-link">
+              {% endif %}
+
+                <div class="vp-media">
+                  {% if block.settings.video %}
+                    {{ block.settings.video
+                      | video_tag:
+                        autoplay: true,
+                        loop: true,
+                        muted: true,
+                        playsinline: true,
+                        controls: false,
+                        class: 'vp-video'
+                    }}
+                  {% elsif product and product.featured_image %}
+                    {{ product.featured_image
+                      | image_url: width: 900
+                      | image_tag: class: 'vp-fallback-image', loading: 'lazy', alt: product.title
+                    }}
+                  {% else %}
+                    <div class="vp-media-placeholder"></div>
+                  {% endif %}
+                </div>
+
+                {% if product %}
+                  <div class="vp-product-bar">
+                    <div class="vp-product-thumb-wrap">
+                      {% if product.featured_image %}
+                        {{ product.featured_image
+                          | image_url: width: 120
+                          | image_tag: class: 'vp-product-thumb', loading: 'lazy', alt: product.title
+                        }}
+                      {% endif %}
+                    </div>
+                    <div class="vp-product-info">
+                      <div class="vp-product-title">
+                        {{ product.title }}
+                      </div>
+                      <div class="vp-product-price">
+                        {{ product.price | money }}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+
+              {% if product %}
+                </a>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+
+        <button type="button" class="vp-arrow vp-arrow--next" data-vp-next>›</button>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video + product slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "EXPLORE THE TRENDS"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Video + product slide",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Shopify-hosted video"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Video + product slider",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.vp-section {
+  margin: 0 40px;
+}
+
+.vp-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vp-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.vp-heading {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.vp-slider-wrap {
+  position: relative;
+}
+
+.vp-slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 4px 8px;
+}
+
+.vp-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.vp-slide {
+  flex: 0 0 280px;
+  max-width: 320px;
+}
+
+.vp-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.vp-media {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.vp-video,
+.vp-fallback-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.vp-media-placeholder {
+  width: 100%;
+  height: 380px;
+  background: #f2f2f2;
+}
+
+.vp-product-bar {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.vp-product-thumb-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.vp-product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vp-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vp-product-title {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.vp-product-price {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.vp-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255,255,255,0.95);
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 2;
+}
+
+.vp-arrow--prev {
+  left: -16px;
+}
+
+.vp-arrow--next {
+  right: -16px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .vp-section {
+    margin: 0 16px;
+  }
+
+  .vp-slide {
+    flex: 0 0 70%;
+  }
+
+  .vp-video,
+  .vp-fallback-image,
+  .vp-media-placeholder {
+    height: 320px;
+  }
+
+  .vp-arrow--prev {
+    left: -4px;
+  }
+
+  .vp-arrow--next {
+    right: -4px;
+  }
+}
+{% endstylesheet %}
+
+{% javascript %}
+(function() {
+  var section = document.getElementById('section-{{ section.id }}');
+  if (!section) return;
+
+  var slider = section.querySelector('[data-vp-slider]');
+  if (!slider) return;
+
+  var prev = section.querySelector('[data-vp-prev]');
+  var next = section.querySelector('[data-vp-next]');
+
+  function scrollByAmount(direction) {
+    var slide = slider.querySelector('.vp-slide');
+    var amount = slide ? (slide.offsetWidth + 24) : 260;
+    slider.scrollBy({ left: direction * amount, behavior: 'smooth' });
+  }
+
+  if (prev) prev.addEventListener('click', function() { scrollByAmount(-1); });
+  if (next) next.addEventListener('click', function() { scrollByAmount(1); });
+})();
+{% endjavascript %}

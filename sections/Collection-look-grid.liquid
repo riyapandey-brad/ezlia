@@ -1,0 +1,93 @@
+<section class="four-grid-sec" style="padding:{{ section.settings.padding }}px 0;">
+  <div class="four-grid-wrapper">
+
+    {% for block in section.blocks %}
+      <a href="{{ block.settings.collection.url }}" class="four-grid-item">
+
+        <div class="four-grid-images">
+          <div class="img-box"><img src="{{ block.settings.img1 | img_url: '800x' }}"></div>
+          <div class="img-box"><img src="{{ block.settings.img2 | img_url: '800x' }}"></div>
+          <div class="img-box"><img src="{{ block.settings.img3 | img_url: '800x' }}"></div>
+          <div class="img-box"><img src="{{ block.settings.img4 | img_url: '800x' }}"></div>
+        </div>
+
+        <h3>{{ block.settings.title }}</h3>
+        <p class="shop-btn">{{ block.settings.btn_text }}</p>
+
+      </a>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "4 Image Collection Grid",
+  "settings": [
+    {
+      "type":"range",
+      "id": "section_height",
+      "label":"Section Padding",
+      "min":0,"max":100,"default":40
+    }
+  ],
+  "blocks":[
+    {
+      "type":"collection_block",
+      "name":"Collection Item",
+      "settings":[
+        { "type":"collection","id":"collection","label":"Select Collection" },
+        { "type":"image_picker","id":"img1","label":"Top Left Image" },
+        { "type":"image_picker","id":"img2","label":"Top Right Image" },
+        { "type":"image_picker","id":"img3","label":"Bottom Left Image" },
+        { "type":"image_picker","id":"img4","label":"Bottom Right Image" },
+        { "type":"text","id":"title","label":"Heading","default":"BLUE HIGHLIGHTS" },
+        { "type":"text","id":"btn_text","label":"Button Text","default":"SHOP NOW →" }
+      ]
+    }
+  ],
+  "max_blocks":6,
+  "presets":[ { "name":"4 Image Collection Grid" } ]
+}
+{% endschema %}
+
+<style>
+.four-grid-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:30px;
+  max-width:1300px;
+  margin:auto;
+}
+.four-grid-item{
+  text-decoration:none;
+  color:#000;
+}
+.four-grid-images{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  aspect-ratio: 1/1;
+  gap: 10px;
+}
+.img-box img{
+  width:100%;
+  height:100%;
+  background-color: #B3ADAE;
+  object-fit:cover;
+}
+h3{
+    margin: unset !important;
+    letter-spacing:.06em;
+    font-weight: 700;
+    font-size: 24px;
+}
+.shop-btn{
+    margin: unset !important;
+    font-size:14px;
+    color: #8E8E8E;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+</style>
